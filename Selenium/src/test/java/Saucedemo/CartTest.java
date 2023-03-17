@@ -57,8 +57,6 @@ public class CartTest {
         driver.findElement(By.cssSelector("#checkout")).click();
 
         String url = driver.getCurrentUrl();
-        System.out.println(url);
-
         Assert.assertEquals("https://www.saucedemo.com/cart.html", url);
     }
 
